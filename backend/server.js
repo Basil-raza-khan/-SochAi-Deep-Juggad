@@ -157,11 +157,11 @@ fastify.ready(err => {
 // Listen on all network interfaces
 fastify.listen({ 
     port: 3000, 
-    host: '0.0.0.0'
+    host: '192.168.2.239'
 }, (err) => {
     if (err) {
         console.error("Error starting server:", err);
         process.exit(1);
     }
-    console.log("Server running on port 3000");
+    console.log(`Server running on http://192.168.2.239:3000`);
 });
